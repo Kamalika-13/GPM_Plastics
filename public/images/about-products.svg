@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 760" fill="none">
+  <defs>
+    <linearGradient id="cup-blue" x1="270" y1="260" x2="520" y2="570" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#fff"/>
+      <stop offset=".55" stop-color="#e8f8ff"/>
+      <stop offset="1" stop-color="#b8e9f8"/>
+    </linearGradient>
+    <linearGradient id="cup-rose" x1="105" y1="375" x2="350" y2="650" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#fff"/>
+      <stop offset=".58" stop-color="#fff0f3"/>
+      <stop offset="1" stop-color="#ffd2de"/>
+    </linearGradient>
+    <linearGradient id="cup-gold" x1="465" y1="390" x2="685" y2="660" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#fff"/>
+      <stop offset=".58" stop-color="#fff7e6"/>
+      <stop offset="1" stop-color="#f5dfb8"/>
+    </linearGradient>
+    <linearGradient id="ice-blue" x1="278" y1="167" x2="500" y2="282" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#a7e8ff"/>
+      <stop offset="1" stop-color="#46aee0"/>
+    </linearGradient>
+    <filter id="shadow" x="37" y="27" width="731" height="710" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="15"/>
+      <feOffset dy="17"/>
+      <feColorMatrix values="0 0 0 0 .227 0 0 0 0 .008 0 0 0 0 .094 0 0 0 .16 0"/>
+      <feBlend in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g filter="url(#shadow)" stroke-linejoin="round">
+    <path d="M287 248c0-58 45-104 105-104s105 46 105 104v38H287v-38Z" fill="url(#ice-blue)"/>
+    <path d="M264 274h256l-26 274c-3 28-26 49-54 49h-96c-28 0-51-21-54-49l-26-274Z" fill="url(#cup-blue)" stroke="#d3eaf2" stroke-width="8"/>
+    <path d="M255 261c0-12 10-22 22-22h230c12 0 22 10 22 22v31H255v-31Z" fill="#fff" stroke="#e5edf0" stroke-width="8"/>
+    <path d="M281 351h224l-9 91H290l-9-91Z" fill="#d9f4ff"/>
+    <path d="M291 487h204" stroke="#42a9d7" stroke-width="16" stroke-linecap="round"/>
+    <path d="M166 397c-16-25-51-29-69-8-20 23-7 53-2 78 10 55 41 100 62 100s52-45 62-100c5-25 18-55-2-78-18-21-53-17-69 8Z" fill="url(#cup-rose)" stroke="#f7c2d0" stroke-width="7"/>
+    <path d="M166 397c-14-20-38-23-51-10 15 0 28 9 39 22-7-22 7-36 24-39-5 11-7 20-14 27 17-14 34-16 51-7-18 1-31 11-40 26" fill="#559d70"/>
+    <path d="M130 471c4-11 12-18 22-21" stroke="#fff" stroke-width="9" stroke-linecap="round" opacity=".75"/>
+    <path d="M580 414c-55 0-83 22-88 58l-22 155c-4 30 19 55 49 55h122c30 0 53-25 49-55l-22-155c-5-36-33-58-88-58Z" fill="url(#cup-gold)" stroke="#efddc2" stroke-width="8"/>
+    <ellipse cx="580" cy="415" rx="91" ry="25" fill="#fff" stroke="#e7d8c1" stroke-width="8"/>
+    <ellipse cx="580" cy="416" rx="68" ry="14" fill="#f1e5d5"/>
+    <path d="M510 507h140m-132 48h124m-116 48h108" stroke="#d8c7ae" stroke-width="9" stroke-linecap="round" opacity=".85"/>
+    <path d="m221 321 17-17m331-91 15-15m65 125 22-9M117 591l-8 21" stroke="#c4034c" stroke-width="8" stroke-linecap="round" opacity=".65"/>
+    <circle cx="230" cy="179" r="9" fill="#c4034c" opacity=".6"/>
+    <circle cx="594" cy="300" r="8" fill="#42a9d7" opacity=".7"/>
+  </g>
+</svg>
