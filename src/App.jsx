@@ -236,7 +236,12 @@ export default function App() {
   const filteredProducts = useMemo(() => activeCategory === 'All' ? products : products.filter((product) => product.category === activeCategory), [activeCategory])
 
   useEffect(() => {
-    const targets = document.querySelectorAll('.reveal')
+    const targets = document.querySelectorAll('.reveal, main > section:not(.hero), footer.site-footer')
+    targets.forEach((target) => {
+      if (target.matches('main > section:not(.hero), footer.site-footer')) {
+        target.classList.add('section-reveal', `section-reveal--${target.id || 'footer'}`)
+      }
+    })
     if (!('IntersectionObserver' in window)) {
       targets.forEach((target) => target.classList.add('is-visible'))
       return
